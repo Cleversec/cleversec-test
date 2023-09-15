@@ -1,2 +1,25 @@
-<p>fill-card-details works!</p>
-<app-card-preview></app-card-preview>
+<div class="container">
+  <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name" class="form-control">
+
+
+    <label for="surname">Surname: </label>
+    <input id="surname" type="text" formControlName="surname" class="form-control">
+
+    <label for="cardsQuantity">Cards to generate: </label>
+    <input id="cardsQuantity" type="number" formControlName="cardsQuantity" class="form-control">
+
+    <button type="submit" class="btn btn-outline-primary">Generate cards</button>
+
+  </form>
+
+  <div *ngIf="cardsToShow.length" class="container text-center">
+    <div class="row row-cols-2">
+      <app-card-preview *ngFor="let card of cardsToShow" [cardData]="card"></app-card-preview>
+
+    </div>
+  </div>
+
+</div>
