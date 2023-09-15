@@ -26,20 +26,21 @@ Occupation will only contain one of the following values: **Doctor**, **Professo
 
 An **OCCUPATIONS** table that contains the following records:
 
-| Column    | Type   |
-|-----------|--------|
-| Samantha  | Doctor |
-| Ocupation | String |
-|           |        |
-|           |        |
-|           |        |
-|           |        |
-|           |        |
-|           |        |
-|           |        |
-|           |        |
+| Column    | Type      |
+|-----------|-----------|
+| Samantha  | Doctor    |
+| Julia     | Actor     |
+| Maria     | Actor     |
+| Meera     | Singer    |
+| Ashley    | Professor |
+| Ketty     | Professor |
+| Christeen | Professor |
+| Jane      | Actor     |
+| Jenny     | Doctor    |
+| Priya     | Singer    |
 
-## Sample Output
+
+## Sample Output
 
 ``` 
 Ashely(P)
